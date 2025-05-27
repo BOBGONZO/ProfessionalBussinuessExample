@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'aos/dist/aos.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Custom Color Palette */
+  --primary-blue: #0052CC;
+  --secondary-green: #36B37E;
+  --background: #F7F9FC;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --cta-hover: #003F91;
+  --alert-red: #FF5630;
+  --white: #FFFFFF;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#F7F9FC] text-[#1A1A1A] font-inter;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold;
+  }
+
+  h3 {
+    @apply text-3xl font-medium;
+  }
+
+  p {
+    line-height: 1.6;
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#0052CC] hover:bg-[#003F91] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 ease-in-out transform hover:scale-105 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-[#0052CC] text-[#0052CC] hover:bg-[#0052CC] hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 ease-in-out;
+  }
+
+  .card-hover {
+    @apply transition-all duration-250 ease-in-out hover:scale-105 hover:shadow-xl;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
