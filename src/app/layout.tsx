@@ -17,7 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Business Pro - Professional Business Websites",
+  title: "Exaplar Landing - Professional Business Websites",
   description:
     "Custom-designed websites that establish your professional online presence and drive meaningful business growth. Mobile-responsive, SEO optimized, and built for results.",
   keywords:
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
-    title: "Business Pro - Professional Business Websites",
+    title: "Exaplar Landing - Professional Business Websites",
     description:
       "Custom-designed websites that establish your professional online presence and drive meaningful business growth.",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Business Pro - Professional Business Websites",
+    title: "Exaplar Landing - Professional Business Websites",
     description: "Custom-designed websites that establish your professional online presence.",
   },
 };
